@@ -1,0 +1,14 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+bin/
+obj/
+TestResults/
+
+# macOS
+.DS_Store
+.AppleDouble
+__MACOSX
