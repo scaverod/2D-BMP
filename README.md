@@ -82,6 +82,27 @@ Example 2: execute using a different set of instances, located inside the `newin
 java -jar target/CBMA.jar --instances.path.default=newinstances
 ```
 
+## MDO: A constraint-based solution for the 2DBMP running inside a dichotomic optimization procedure.
+
+### Pre-requisites
+
+1. Python 3.10+
+2. [PyCSP3](https://github.com/xcsp3team/pycsp3)
+    ```bash
+    sudo pip3 install pycsp3
+    sudo apt-get install openjdk-11-jdk
+    ```
+    or
+    ```bash
+    sudo pip3 install --upgrade pycsp3
+    ```
+
+### Running the code
+
+    ```bash
+    python3 matrix_bandwidth.py -lb=<lower> -ub=<upper> -data=<instance> -parser=mtx_parser.py
+    ```
+
 ## Cite
 
 Consider citing our paper if used in your own work:
