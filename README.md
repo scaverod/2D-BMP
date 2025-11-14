@@ -82,7 +82,7 @@ Example 2: execute using a different set of instances, located inside the `newin
 java -jar target/CBMA.jar --instances.path.default=newinstances
 ```
 
-## MDO: A constraint-based solution for the 2DBMP running inside a dichotomic optimization procedure.
+## MDO
 
 ### Pre-requisites
 
