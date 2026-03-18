@@ -65,21 +65,48 @@ Example:
 
 ````
 
-## CBMA
+## Methods
 
+### CSP
 
-Execution of the program can be done via the command line.
-
-Example 1: execute default experiment with the default set of instances
+Execution of the CSP algorithm specifying the path to the instances directory. Note that you need to have `pycsp3` installed.
 
 ```bash
-java -jar target/CBMA.jar 
+python3 matrix_bandwidth.py -k=<K> -data=<instance> -dataparser=mtx_parser.py
+```
+Or specifying bounds:
+```bash
+python3 matrix_bandwidth.py -lb=<LB> -ub=<UB> -data=<instance> -dataparser=mtx_parser.py
 ```
 
-Example 2: execute using a different set of instances, located inside the `newinstances` folder.
+### CBMA
+
+Execution of the CBMA algorithm specifying the path to the instances directory:
 
 ```bash
-java -jar target/CBMA.jar --instances.path.default=newinstances
+java -jar CBMA.jar --instances.path.default=<path_to_instances_directory>
+```
+
+### MA (Unified)
+
+Execution of the MA algorithm specifying the path to the instances directory:
+
+```bash
+java -jar MATDBMP.jar <path_to_instances_directory>
+```
+
+### DRSA
+
+Once generated in `DRSA.jar`, you can execute it highlighting standard Java syntax. `Main.java` accepts up to 4 optional arguments:
+
+```bash
+java -jar DRSA.jar [instances_path] [num_runs] [seed] [max_time_seconds]
+```
+
+**Example:**
+Run 5 times per instance, with seed 42, and a maximum time of 3600 seconds (1 hour).
+```bash
+java -jar target/DRSA.jar instances/prelim2 5 42 3600
 ```
 
 ## Cite
