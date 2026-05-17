@@ -109,6 +109,27 @@ Run 5 times per instance, with seed 42, and a maximum time of 3600 seconds (1 ho
 java -jar target/DRSA.jar instances/prelim2 5 42 3600
 ```
 
+## MDO
+
+### Pre-requisites
+
+1. Python 3.10+
+2. [PyCSP3](https://github.com/xcsp3team/pycsp3)
+    ```bash
+    sudo pip3 install pycsp3
+    sudo apt-get install openjdk-11-jdk
+    ```
+    or
+    ```bash
+    sudo pip3 install --upgrade pycsp3
+    ```
+
+### Running the code
+
+    ```bash
+    python3 matrix_bandwidth.py -lb=<lower> -ub=<upper> -data=<instance> -parser=mtx_parser.py
+    ```
+
 ## Cite
 
 Consider citing our paper if used in your own work:
