@@ -5,7 +5,7 @@
 
 
 ## Abstract
-Paper under review. To be added upon acceptance.
+This paper addresses the Two-dimensional Bandwidth Minimization Problem (2D-BMP) using the $L_\infty$-norm distance, focusing on embedding a guest graph into a grid-like host graph to minimize the maximum edge distance. While previous research has emphasized theoretical aspects and regular graphs, practical methods for complex graphs remain underexplored. Solving 2D-BMP is crucial for applications such as VLSI design, network simulation, and scheduling, though its NP-hard nature poses significant challenges. We propose three exact Constraint Satisfaction Problem (CSP) models—arithmetic, finite domain, and dichotomic optimization to efficiently solve the 2D-BMP. Additionally, we introduce the Convergence-Based Multi-start Algorithm (CBMA), a heuristic combining greedy construction and local search for approximate solutions. Our CSP exact methods found optimal solutions for 70 small benchmark instances from diverse standard graph topologies, including 21 previously unknown. On the other hand, the CBMA achieved new upper bounds, expending moderate computational times, for 113 graphs extracted from the Harwell-Boeing Sparse Matrix Collection which present larger and more complex structures.
 
 ## Authors
 
